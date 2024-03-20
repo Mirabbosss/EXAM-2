@@ -1,0 +1,61 @@
+#testomonials {
+    width: 100%;
+
+    .wrapper {
+        padding: 96px 0;
+
+        button {
+            margin: 0 46%;
+        }
+
+        p {
+            max-width: 400px;
+            margin-top: 16px;
+            margin-bottom: 120px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: center;
+            color: #374151;
+        }
+
+        .wrapper_cards {
+            display: flex;
+            gap: 48px;
+
+            .card {
+                width: 374px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+                transition: all 0.5s ease;
+                border-radius: 12px;
+                padding: 0px 48px;
+
+                img {
+                    margin: 48px 112px;
+                }
+
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #testomonials {
+        .wrapper {
+            padding: 10px 0;
+
+            button {
+                margin-left: 150px;
+            }
+            .wrapper_cards {
+                flex-direction: column;
+                gap: 18px;
+            }
+        }
+
+    }
+
+}

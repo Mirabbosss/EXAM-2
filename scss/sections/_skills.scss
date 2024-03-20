@@ -1,0 +1,76 @@
+#skills {
+    width: 100%;
+
+    .wrapper {
+        padding: 80px 0;
+
+        .btn {
+            margin: 0 47%;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: center;
+            height: 28px;
+            color: #4B5563;
+            margin-top: 16px;
+        }
+
+        .list {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            row-gap: 40px;
+
+            img {
+                transition: all 0.5s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 769px) {
+    #skills {
+        .wrapper {
+            padding: 10px 0;
+    
+            .btn {
+                margin-left: 100px;
+            }
+    
+            p {
+                font-size: 12px;
+                font-weight: 350;
+                margin-right: 90px;
+            }
+    
+            .list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #skills {
+        .wrapper {
+            padding: 10px 0;
+    
+            p {
+                font-size: 12px;
+                font-weight: 350;
+            }
+    
+            .list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}

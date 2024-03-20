@@ -1,0 +1,129 @@
+#intro {
+    width: 100%;
+
+    .wrapper {
+        padding: 70px 0 90px 0;
+        display: flex;
+        gap: 48px;
+
+       .left {
+        padding: 60px 5px;
+        h1 {
+            max-width: 600px;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 72px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #111827;
+        }
+
+        p {
+            max-width: 770px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #4B5563;
+        }
+
+        .title {
+            margin-top: 20px;
+
+            .wrap {
+                display: flex;
+                align-items: center;
+                padding: 0;
+    
+                img {
+                    margin-right: 10px;
+                    margin-left: 5px;
+                }
+                &:first-child {
+                    margin-top: 48px;
+                }
+            }
+        }
+
+        .links {
+            display: flex;
+            margin-top: 30px;
+        }
+       }
+
+       .right {
+        padding: 100px 40px 40px 20px;
+
+        img {
+            box-shadow: 40px 40px #E5E7EB;
+            transition: all 2s ease;
+            
+            &:hover {
+                transform: translate(20px, 20px);
+                box-shadow: 10px 10px #E5E7EB;
+            }
+        }
+       }
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #intro {
+        .wrapper {
+            padding: 20px 20px;
+            flex-direction: column;
+    
+           .left {
+            h1 {
+                font-size: 29px;
+                font-weight: 500;
+                line-height: 32px;
+            }
+    
+            p {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 20px;
+            }
+    
+            .title {
+                margin-top: 10px;
+    
+                .wrap {
+                    padding: 0;
+        
+                    img {
+                        margin-right: 10px;
+                        margin-left: 0px;
+                    }
+                    &:first-child {
+                        margin-top: 48px;
+                    }
+                }
+            }
+    
+            .links {
+                display: flex;
+                margin-top: 10px;
+                margin-right: 50px;
+            }
+           }
+    
+           .right {
+            padding-right: 100px;
+    
+            img {
+                box-shadow: 20px 20px #E5E7EB;
+                transition: all 6s ease;
+                margin-right: 100px;
+                
+                &:hover {
+                    transform: translate(20px, 20px);
+                    box-shadow: 10px 10px #E5E7EB;
+                }
+            }
+           }
+        }
+    }
+}
+

@@ -1,0 +1,110 @@
+.toggle_menu {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    left: -100%;
+    background-color: #fff;
+
+    nav {
+        padding: 100px 15px 20px 20px;
+        ul:first-child {
+            li {
+                margin-top: 16px;
+
+                a {
+                height: 24px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+                color: #4B5563;
+
+                &:hover {
+                    color: #111827;
+                }
+            }
+            }
+
+            
+        }
+
+        ul:nth-child(2) {
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                margin-top: 32px;
+
+                p {
+                    color: #4B5563;
+                }
+            }
+
+
+            button {
+                width: 100%;
+                padding: 6px 16px;
+                border-radius: 12px;
+                background-color: #111827;
+                margin-top: 50px;
+
+                a {
+                    color: #ffffff;
+                }
+
+                &:hover {
+                    background-color: #374151;
+
+                    a {
+                        color: #EDEEF0;
+                    }
+                }
+
+                &:active {
+                    background-color: #1F2937;
+                }
+            }
+
+            .theme {
+                width: 45px;
+                height: 25px;
+                background-color: gray;
+                border-radius: 15px;
+                appearance: none;
+                cursor: pointer;
+
+                &::after {
+                    content: "";
+                    width: 22.5px;
+                    border-radius: 50%;
+                    height: 25px;
+                    background-color: #161616;
+                    display: inline-block;
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+
+            .theme:checked:after {
+                content: "";
+                width: 22.5px;
+                border-radius: 50%;
+                height: 25px;
+                background-color: #ffffff;
+                display: inline-block;
+                transform: translate(22.5px);
+            }
+        }
+    }
+}
+
+.toggle-hide {
+    left: 0;
+}
+
+@media only screen and (min-width: 769px) {
+    .toggle_menu {
+        display: none;
+    }
+}

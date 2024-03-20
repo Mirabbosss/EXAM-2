@@ -1,0 +1,123 @@
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: #fff;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+
+        .logo {
+            height: 36px;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #111827;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+
+            a {
+                height: 24px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+                color: #4B5563;
+
+                &:hover {
+                    color: #111827;
+                }
+            }
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+
+            button {
+                padding: 6px 16px;
+                border-radius: 12px;
+                background-color: #111827;
+
+                a {
+                    color: #ffffff;
+                }
+
+                &:hover {
+                    background-color: #374151;
+
+                    a {
+                        color: #EDEEF0;
+                    }
+                }
+
+                &:active {
+                    background-color: #1F2937;
+                }
+            }
+
+            .theme {
+                width: 45px;
+                height: 25px;
+                background-color: gray;
+                border-radius: 15px;
+                appearance: none;
+                cursor: pointer;
+
+                &::after {
+                    content: "";
+                    width: 22.5px;
+                    border-radius: 50%;
+                    height: 25px;
+                    background-color: #161616;
+                    display: inline-block;
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+
+            .theme:checked:after {
+                content: "";
+                width: 22.5px;
+                border-radius: 50%;
+                height: 25px;
+                background-color: #ffffff;
+                display: inline-block;
+                transform: translate(22.5px);
+            }
+        }
+
+        .menu-list-icon {
+            display: none;
+            font-size: 32px;
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    header {
+        nav {
+            padding: 16px;
+
+            ul {
+                display: none;
+            }
+
+            .menu-list-icon {
+                display: block;
+            }
+        }
+    }
+}

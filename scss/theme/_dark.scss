@@ -1,0 +1,205 @@
+body {
+    font-family: "Inter", sans-serif;
+
+    &:has(.theme:checked) {
+        background-color: #030712;
+
+
+        header {
+            background-color: #030712;
+
+            .logo {
+                color: #ffffff;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+
+            a {
+                color: #ffffff;
+
+                &:hover {
+                    color: #374151;
+                }
+            }
+
+            button {
+                background-color: #111827;
+
+                a {
+                    color: #ffffff;
+                }
+
+                &:hover {
+                    background-color: #E5E7EB;
+
+                    a {
+                        color: #111827;
+                    }
+                }
+
+                &:active {
+                    background-color: #F3F4F6;
+                }
+            }
+
+            .menu-list-icon {
+                color: #ffffff;
+            }
+
+            p {
+                color: #ffffff;
+            }
+        }
+
+        .toggle_menu {
+            background-color: #030712;
+
+            nav {
+                ul {
+                    li {
+                        a {
+                            color: #ffffff;
+
+                            &:hover {
+                                color: #374151;
+                            }
+                        }
+
+                    }
+
+                    li p {
+                        color: #ffffff;
+                    }
+
+
+                    button {
+                        background-color: #111827;
+        
+                        a {
+                            color: #ffffff;
+                        }
+        
+                        &:hover {
+                            background-color: #E5E7EB;
+        
+                            a {
+                                color: #111827;
+                            }
+                        }
+        
+                        &:active {
+                            background-color: #F3F4F6;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        main,
+        footer {
+
+            h2,p {
+                color: #ffffff;
+            }
+
+            .btn {
+                background-color: #E5E7EB;
+            }
+
+            .icon {
+                background-color: #030712;
+                color: #ffffff;
+
+                &:hover {
+                    background-color: #1F2937;
+                    color: #ffffff;
+                }
+
+                &:active {
+                    background-color: #374151;
+                    color: #ffffff;
+                }
+            }
+
+            #intro {
+
+                h1,
+                h2,
+                h3,
+                p {
+                    color: #ffffff;
+                }
+            }
+
+            #about_me {
+                background-color: #111827;
+
+                h1,
+                h2,
+                h3,
+                p {
+                    color: #ffffff;
+                }
+            }
+
+            #experience {
+                background-color: #111827;
+
+                .card {
+                    background-color: #1F2937;
+
+                    li a,
+                    h3,
+                    h2 {
+                        color: #ffffff;
+                    }
+                }
+
+                p {
+                    color: #ffffff;
+                }
+            }
+
+            #work {
+                p {
+                    color: #ffffff;
+                }
+                .wrapper_cards {
+                    background-color: #1F2937;
+
+                    h1,
+                    h2,
+                    h3,
+                    p {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            #testomonials {
+                background-color: #111827;
+                
+                p {
+                    color: #ffffff;
+                }
+
+                .wrapper_cards {
+                    .card {
+                        background-color: #1F2937;
+                    }
+
+                    h1,
+                    h2,
+                    h3,
+                    p {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
